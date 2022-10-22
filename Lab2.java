@@ -15,19 +15,19 @@ public class Lab2 {
 		first.setX(s.nextDouble());
 		first.setY(s.nextDouble());
 		first.setZ(s.nextDouble());
-		if ((first.compare() == true)) 
-			ps.print("Введите другое значение");
 		Point3d second = new Point3d();
 		second.setX(s.nextDouble());
 		second.setY(s.nextDouble());
 		second.setZ(s.nextDouble());
-		if ((second.compare() == true)) 
-			ps.print("Введите другое значение");
 		Point3d third = new Point3d();
 		third.setX(s.nextDouble());
 		third.setY(s.nextDouble());
 		third.setZ(s.nextDouble());
-		if ((third.compare() == true)) 
+		if ((second.compare(third) == true)) 
+			ps.print("Введите другое значение");
+		if ((first.compare(third) == true)) 
+			ps.print("Введите другое значение");
+		if ((first.compare(second) == true)) 
 			ps.print("Введите другое значение");
 		ps.print(computeArea(first, second, third));
 	}
