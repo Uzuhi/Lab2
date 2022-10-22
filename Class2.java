@@ -1,8 +1,8 @@
 //package nes;
 
 public class Class2d {
-    public double xCoord;
-    public double yCoord;
+    private double xCoord;
+    private double yCoord;
 
     public Class2d ( double x, double y){
         xCoord = x;
